@@ -76,7 +76,7 @@ $recup= mysqli_query($dbcon, $sql);
             }
 
             else {
-                echo "<p class='message'>Aucun apprenant n'est enregistré pour le moment.</p>";
+                echo "<p class='messagesp'>Aucun apprenant n'est enregistré pour le moment.</p>";
             }
 
             ?>
