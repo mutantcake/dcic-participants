@@ -102,6 +102,15 @@ th, td {
   color: #ffffff;
 }
 
+.messagesp {
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
 form {
   width: 400px;
   display: flex;
