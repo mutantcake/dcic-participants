@@ -19,6 +19,7 @@ $recup= mysqli_query($dbcon, $sql);
 </head>
 <body>
 <main>
+    <div><p class='message' style="font-size: 30px;">Liste des apprenants du programme D-CLIC</p></div>
 <div class="adsearch">
         <div class="link-container">
         <a class="link" href="ajout-apprenant.php">Ajouter un apprenant</a>
