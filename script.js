@@ -4,8 +4,10 @@ function confirmerSuppression(id) {
   }
 }
   
-function confirmerModif(form) {
-    if (window.confirm("Êtes-vous sûr de vouloir modifier cet apprenant ?")) {
-        form.submit();
+function confirmerModif() {
+    if (window.confirm("Êtes-vous sûr de vouloir modifier l'apprenant ?")) {
+        return true;
+    } else {
+        return false;
     }
 }
