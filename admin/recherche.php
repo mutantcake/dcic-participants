@@ -2,7 +2,7 @@
 require_once "../db-connect.php";
 
 //Recuperation de la liste des participants
-$terme=$recherche =$dbcon->real_escape_string($_GET['search']);
+$terme=$dbcon->real_escape_string($_GET['search']);
 $sql="SELECT * FROM apprenants WHERE nom LIKE '%$terme' OR prenom LIKE '%$terme%' OR ville LIKE '%$terme%' OR formation LIKE '%$terme%'";
 $recup= mysqli_query($dbcon, $sql);
 
