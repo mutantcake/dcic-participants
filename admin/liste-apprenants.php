@@ -15,6 +15,7 @@ $recup= mysqli_query($dbcon, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
     <title>Liste des apprenants</title>
 </head>
 <body>
@@ -68,7 +69,11 @@ $recup= mysqli_query($dbcon, $sql);
                 <td><?=$rows['formation']?></td>
                 
                 <td class="image"><a href="edit-apprenant.php?id=<?=$rows['id']?>"><img src="../images/write.png" alt="Modifier"></a></td>
-                <td class="image"><a href="delete-apprenant.php?id=<?=$rows['id']?>"><img src="../images/remove.png" alt="Supprimer"></a></td>
+                <td class="image">
+                    <a href="#" onclick="confirmerSuppression(<?= $rows['id'] ?>)">
+                        <img src="../images/remove.png" alt="Supprimer">
+                    </a>
+                 </td>
             </tr>
 
             <?php
