@@ -3,7 +3,7 @@ require_once "../db-connect.php";
 
 //Recuperation de la liste des participants
 
-$sql="SELECT * FROM apprenants";
+$sql="SELECT * FROM apprenants ORDER BY id DESC";
 $recup= mysqli_query($dbcon, $sql);
 
 ?>
