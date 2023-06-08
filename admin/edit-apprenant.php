@@ -56,7 +56,7 @@ while($row= mysqli_fetch_assoc($recup)){
 </head>
 <body>
     
-    <form action="" method="post" onsubmit="event.preventDefault(); confirmerModif(this);">
+    <form action="" method="post" onsubmit="return confirmerModif();">
         <h1>Editer un apprenant</h1>
         <input type="text" name="nom" value="<?=$row['nom']?>" placeholder="Nom de l'apprenant" required>
         <input type="text" name="prenom" value="<?=$row['prenom']?>" placeholder="Prénom de l'apprenant" required>
