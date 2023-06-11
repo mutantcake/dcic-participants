@@ -4,7 +4,7 @@
 
 $host="localhost";
 $username="root";
-$mdp="";
+$mdp="blank";
 $dbname="dclic";
 
 //Creation de la connexion à la base de donnée
