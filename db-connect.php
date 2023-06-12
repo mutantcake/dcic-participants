@@ -4,8 +4,8 @@
 
 $host="localhost";
 $username="root";
-$mdp="blank";
-$dbname="dclic";
+$mdp="";  // Inserez le mot de passe de la base de donnée
+$dbname="";  //Inserez le nom de la base de donnée
 
 //Creation de la connexion à la base de donnée
 
