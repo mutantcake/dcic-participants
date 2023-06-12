@@ -200,7 +200,8 @@ form input[type="submit"] {
   .adsearch{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     align-items: center;
   }
 }
