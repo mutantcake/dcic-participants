@@ -1,5 +1,10 @@
-
 <?php
+require "../function.php";
+if (!isConnected()){
+    header("location:login.php");
+    die;
+
+}
 foreach ($_POST as $key => $val) {
     require_once "../db-connect.php";
     ${$key}=$dbcon->real_escape_string($val);

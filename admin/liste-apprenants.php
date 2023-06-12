@@ -1,4 +1,11 @@
 <?php
+require "../function.php";
+if (!isConnected()){
+    header("location:login.php");
+    die;
+
+}
+
 require_once "../db-connect.php";
 
 //Recuperation de la liste des participants
@@ -22,8 +29,18 @@ $recup= mysqli_query($dbcon, $sql);
 <main>
     <div><p class='message' style="font-size: 30px;">Liste des apprenants du programme D-CLIC</p></div>
 <div class="adsearch">
+
+
         <div class="link-container">
         <a class="link" href="ajout-apprenant.php">Ajouter un apprenant</a>
+        </div>
+
+        <div class="link-container">
+        <a class="link" href="liste-admins.php">Gérer les Administrateurs</a>
+        </div>
+
+        <div class="link-container">
+        <a class="link" href="logout.php" style="color: #df3939; background-color:white;">Bonjour <?=$_SESSION['admin_prenom'];?>. Cliquez ici pour vous déconnecter !</a>
         </div>
     <?php
             
@@ -70,7 +87,7 @@ $recup= mysqli_query($dbcon, $sql);
                 
                 <td class="image"><a href="edit-apprenant.php?id=<?=$rows['id']?>"><img src="../images/write.png" alt="Modifier"></a></td>
                 <td class="image">
-                    <a href="#" onclick="confirmerSuppression(<?= $rows['id'] ?>)">
+                    <a href="#" onclick="confirmerSuppressionAp(<?= $rows['id'] ?>)">
                         <img src="../images/remove.png" alt="Supprimer">
                     </a>
                  </td>

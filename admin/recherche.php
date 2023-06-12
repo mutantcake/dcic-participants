@@ -1,4 +1,11 @@
 <?php
+require "../function.php";
+if (!isConnected()){
+    header("location:login.php");
+    die;
+
+}
+
 require_once "../db-connect.php";
 
 //Recuperation de la liste des participants

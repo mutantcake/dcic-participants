@@ -1,4 +1,11 @@
 <?php
+require "../function.php";
+if (!isConnected()){
+    header("location:login.php");
+    die;
+
+}
+
 $ap_id= $_GET['id'];
 foreach ($_POST as $key => $val) {
     require_once "../db-connect.php";
@@ -56,7 +63,7 @@ while($row= mysqli_fetch_assoc($recup)){
 </head>
 <body>
     
-    <form action="" method="post" onsubmit="return confirmerModif();">
+    <form action="" method="post" onsubmit="return confirmerModifAp();">
         <h1>Editer un apprenant</h1>
         <input type="text" name="nom" value="<?=$row['nom']?>" placeholder="Nom de l'apprenant" required>
         <input type="text" name="prenom" value="<?=$row['prenom']?>" placeholder="Prénom de l'apprenant" required>
