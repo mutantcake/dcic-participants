@@ -6,7 +6,7 @@ Importer la base de donnee et mettre les informations de connexion à jour dans 
 
 Demo: https://damson.dev/dclic
 
-# Admin: 
+# Admin Demo: 
 Email: zoundi@test.com
 
 Mot de passe: 0000
