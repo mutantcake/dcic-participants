@@ -30,7 +30,7 @@ if(isset($_POST['send'])){
         
         else {
             // L'utilisateur n'est pas authentifié
-            echo "Identifiants invalides";
+            echo "<p class='message'>Identifiants incorrects</p>";
         }
 
     }
@@ -53,7 +53,6 @@ if(isset($_POST['send'])){
         <input type="email" name="email" id="" placeholder="Adresse Email" required>
         <input type="password" name="password" id="" placeholder="Mot de passe" required>
         <input type="submit" value="Se connecter" name="send">
-        <a class="link back" href="../index.php">Retour à la liste</a>
     </form>
 
 </body>
