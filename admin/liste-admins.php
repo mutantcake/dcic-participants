@@ -66,8 +66,7 @@ $recup= mysqli_query($dbcon, $sql);
                 <th>Prénom</th>
                 <th>Adresse E-Mail</th>
                 <th>Niveau de privilège</th>
-                <th>Modifier</th>
-                <th>Supprimer</th>
+                <th colspan="2" style="background-color: #df3939;">Action</th>
             </tr>
         </thead>
         <tbody>
