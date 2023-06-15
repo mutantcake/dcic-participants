@@ -81,7 +81,7 @@ $recup= mysqli_query($dbcon, $sql);
             <tr>
                 <td><?=$rows['nom']?></td>
                 <td><?=$rows['prenom']?></td>
-                <td><?=$rows['date_naissance']?></td>
+                <td><?= dateInFrench($rows['date_naissance'])?></td>
                 <td><?=$rows['ville']?></td>
                 <td><?=$rows['formation']?></td>
                 
