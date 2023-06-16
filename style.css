@@ -7,9 +7,21 @@
   font-family: 'Rowdies', cursive;
 }
 
-.link_container {
+.adsearch{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .link-container {
   margin-bottom: 20px;
 }
+
+.link_container {
+  margin-bottom: 20px;
+} */
 
 .link {
   background-color: #6F7BD9;
@@ -94,10 +106,10 @@ th, td {
 
 .message {
   width: 100%;
-  padding: 10px;
+  padding: auto;
   text-align: center;
   border-radius: 6px;
-  margin: 5px 0;
+  margin: 30px 0;
   font-weight: bold;
   color: #ffffff;
 }
@@ -197,31 +209,20 @@ form input[type="submit"] {
     text-align: unset;
   }
 
-  .adsearch{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
-  }
 }
 
 .link {
-  margin: 20px 0;
+  min-width: 0;
+  display: inline-block;  
 }
 
-.adsearch{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .searchbox {
   flex-direction: row;
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
+  width: auto;
 }
 
 .searchbox input[type="search"] {
@@ -236,14 +237,28 @@ form input[type="submit"] {
 }
 
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 965px) {
 
    .adsearch{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
   }
+
+  form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
 }
 
 /* Correction */
@@ -303,4 +318,10 @@ table {
 
 table tr {
   border-bottom: 1px solid #E7252F;
+}
+
+@media screen and (max-width: 750px) {
+  table {
+    border: none;
+  }
 }
